@@ -27,7 +27,7 @@ public class CookieGetter {
         // Leer las cabeceras de respuesta y buscar las cookies
         List<String> cookies = connection.getHeaderFields().get("Set-Cookie");
 
-        // Imprimir todas las cookies
+        // Imprimir todas las cookies toas
         if (cookies != null) {
             for (String cookie : cookies) {
                 System.out.println("Cookie: " + cookie);
