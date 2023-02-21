@@ -1,5 +1,7 @@
 {
     "java.project.sourcePaths": [
-        "correoCuadrado"
+        "UT1_all/Ejercicio/hospital",
+        "UT1_all/Ejercicio/Granja",
+        "UT1_all/Ejercicio/Hospital"
     ]
 }
