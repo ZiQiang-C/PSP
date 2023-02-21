@@ -12,8 +12,7 @@ public class UDPMulticastClient implements Runnable {
       t.start();
    }
 
-   public void receiveUDPMessage(String ip, int port) throws
-         IOException {
+   public void receiveUDPMessage(String ip, int port) throws IOException {
       byte[] buffer=new byte[1024];
       MulticastSocket socket=new MulticastSocket(port);
       InetAddress group=InetAddress.getByName(ip);
