@@ -4,10 +4,10 @@ import java.io.InputStreamReader;
 import java.util.HashMap;
 
 public class MD5Checker {
-    public static int MD5_LENGTH=32;
+    private static final int MD5_LENGTH = 32;
     public static void main(String [] args){
         HashMap<String,String> mapa =new HashMap<String,String>();
-        mapa.put("","");
+        mapa.put("Hola","f688ae26e9cfa3ba6235477831d5122e");
 
 
         for(String k :mapa.keySet()){
@@ -20,7 +20,7 @@ public class MD5Checker {
             if(md5calculado.equals(md5almacenado)){
                 System.out.println(k+ "Tiene el MD5 bien");
             }else{
-                System.out.println(k+"ERROR");
+                System.out.println(k+" ERROR");
             }
         }
     }
@@ -40,6 +40,7 @@ public class MD5Checker {
              in.close();
         } catch (Exception e) {
             // TODO: handle exception
+            
         }
 
 
